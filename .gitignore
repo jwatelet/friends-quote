@@ -33,4 +33,8 @@
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
+/config/master.key
+.vscode
+.clever.json
+
 /node_modules
