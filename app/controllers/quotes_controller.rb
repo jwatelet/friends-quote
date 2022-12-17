@@ -1,3 +1,5 @@
 class QuotesController < ApplicationController
-  def index; end
+  def index
+    @quotes = Quote.all
+  end
 end
