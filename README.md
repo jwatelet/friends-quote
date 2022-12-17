@@ -1,7 +1,7 @@
 # README
 
 A friend of mine is an absolute genius. He's a really gifted developer, and he likes saying punchlines.
-This app is made for collect every punchlines of our genius friends.
+This app is made to collect every punchlines of our genius friends.
 
 ## Getting started
 
