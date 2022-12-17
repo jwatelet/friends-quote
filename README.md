@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A friend of mine is an absolute genius. He's a really gifted developer, and he likes saying punchlines.
+This app is made for collect every punchlines of our genius friends.
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+run the following commands to setup:
 
-* System dependencies
+- `bin/setup`
 
-* Configuration
+## run project in dev :
 
-* Database creation
+- `bin/dev`
 
-* Database initialization
+## Run the tests
 
-* How to run the test suite
+run the following command :
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `rspec -f d`
