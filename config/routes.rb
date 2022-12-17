@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "quotes#index"
+
+  get 'signup' => 'users#new'
+  get 'signin' => 'sessions#new'
 end
