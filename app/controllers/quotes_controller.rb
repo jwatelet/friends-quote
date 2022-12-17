@@ -1,4 +1,6 @@
 class QuotesController < ApplicationController
+  before_action :require_signin, except: %i[index]
+
   def index
     @quotes = Quote.all
   end
