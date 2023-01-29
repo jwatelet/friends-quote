@@ -18,3 +18,8 @@ run the following commands to setup:
 run the following command :
 
 - `rspec -f d`
+
+## Todo list
+- pagination
+- slug url for quotes
+- likes on quotes
