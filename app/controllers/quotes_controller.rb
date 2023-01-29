@@ -1,8 +1,12 @@
 class QuotesController < ApplicationController
-  before_action :require_signin, except: %i[index]
+  before_action :require_signin, except: %i[index show]
 
   def index
     @quotes = Quote.all
+  end
+
+  def show
+    @quote = Quote.find(params[:id])
   end
 
   def new

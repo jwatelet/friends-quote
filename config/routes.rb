@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users, only: [:new, :create]
-  resources :quotes, only: [:index, :new, :create]
+  resources :quotes, only: [:index, :show, :new, :create]
   resource :session, only: [:new, :create, :destroy]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
