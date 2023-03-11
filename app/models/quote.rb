@@ -24,4 +24,6 @@ class Quote < ApplicationRecord
 
   validates :author, presence: true
   validates :text, presence: true
+
+  scope :most_liked, -> { left_joins(:favourites).group(:id).order("COUNT(favourites.id) DESC") }
 end

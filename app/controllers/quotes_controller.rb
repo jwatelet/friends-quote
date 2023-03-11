@@ -2,7 +2,7 @@ class QuotesController < ApplicationController
   before_action :require_signin, except: %i[index show]
 
   def index
-    @quotes = Quote.all
+    @quotes = Quote.most_liked
   end
 
   def show
