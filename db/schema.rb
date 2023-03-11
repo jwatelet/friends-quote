@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_17_221409) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_11_163856) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "favourites", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "quote_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["quote_id"], name: "index_favourites_on_quote_id"
+    t.index ["user_id"], name: "index_favourites_on_user_id"
+  end
 
   create_table "quotes", force: :cascade do |t|
     t.text "text"
@@ -32,5 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_17_221409) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "favourites", "quotes"
+  add_foreign_key "favourites", "users"
   add_foreign_key "quotes", "users"
 end

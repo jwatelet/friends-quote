@@ -14,6 +14,7 @@ class User < ApplicationRecord
   has_secure_password
 
   has_many :quotes, dependent: :destroy
+  has_many :favourites, dependent: :destroy
 
   validates :firstname, presence: true
   validates :lastname, presence: true
