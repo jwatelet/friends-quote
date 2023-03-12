@@ -2,9 +2,13 @@
   <!-- START ARTICLE FEED -->
   <section class="articles">
     <%= render @quotes %>
+    <div class="column is-8 is-offset-2">
+      <%= paginate @quotes %>
+    </div>
   </section>
   <!-- END ARTICLE FEED -->
 </div>
+
 
 <div class="field is-grouped is-grouped-centered">
   <p class="control">

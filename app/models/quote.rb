@@ -18,6 +18,8 @@
 #  fk_rails_...  (user_id => users.id)
 #
 class Quote < ApplicationRecord
+  paginates_per 5
+
   belongs_to :user
 
   has_many :favourites, dependent: :destroy
