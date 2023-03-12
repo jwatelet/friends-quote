@@ -3,8 +3,7 @@ module FavouritesHelper
     favourite = quote.favourites.find_by(user_id: current_user)
 
     if favourite
-      link_to(quote_favourite_path(quote, favourite),
-              data: { 'turbo-method': :delete }, class: "tag") do
+      link_to(quote_favourite_path(quote, favourite), data: { 'turbo-method': :delete }, class: "tag") do
         content_tag(:span, "", class: "fa-solid fa-heart")
       end
     else
